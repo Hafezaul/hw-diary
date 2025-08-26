@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komponen Utama Komputer</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Model Viewer -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div class="container-fluid">
+        <div class="container">
+            <!-- Header -->
+            <div class="text-center py-5">
+                <h1 class="display-4 mb-3">Komponen Utama Komputer</h1>
+                <p class="lead text-muted">Catatan pembelajaran tentang hardware komputer</p>
+            </div>
+
+            <!-- Section 1: CPU -->
+            <div class="section-container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="text-content">
+                            <h2>Central Processing Unit (CPU)</h2>
+                            <p>
+                                CPU adalah otak dari komputer yang bertanggung jawab untuk menjalankan instruksi program 
+                                dan melakukan perhitungan. CPU menentukan seberapa cepat komputer dapat memproses data.
+                            </p>
+                            <h5>Fungsi Utama:</h5>
+                            <ul class="feature-list">
+                                <li>Menjalankan instruksi program</li>
+                                <li>Melakukan perhitungan aritmatika</li>
+                                <li>Mengontrol aliran data dalam sistem</li>
+                                <li>Mengelola operasi logika</li>
+                            </ul>
+                            <button class="btn btn-primary">Pelajari Selengkapnya</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="model-container">
+                            <model-viewer 
+                                src="./asset/CPU.glb"
+                                alt="CPU 3D Model"
+                                camera-controls
+                                auto-rotate
+                                interaction-prompt="none">
+                                <div slot="poster" style="background: #f8f9fa; display: flex; align-items: center; justify-content: center; height: 100%; color: #6c757d;">
+                                    <p>CPU Model</p>
+                                </div>
+                            </model-viewer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 2: RAM -->
+            <div class="section-container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6 order-lg-2 order-md-2">
+                        <div class="text-content">
+                            <h2>Random Access Memory (RAM)</h2>
+                            <p>
+                                RAM adalah memori sementara yang digunakan untuk menyimpan data dan program yang sedang 
+                                aktif. Semakin besar kapasitas RAM, semakin banyak program yang dapat dijalankan bersamaan.
+                            </p>
+                            <h5>Karakteristik:</h5>
+                            <ul class="feature-list">
+                                <li>Penyimpanan sementara (volatile)</li>
+                                <li>Akses data sangat cepat</li>
+                                <li>Menentukan multitasking capability</li>
+                                <li>Data hilang saat power off</li>
+                            </ul>
+                            <button class="btn btn-primary">Pelajari Selengkapnya</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 order-lg-1 order-md-1">
+                        <div class="model-container">
+                            <model-viewer 
+                                src="./asset/RAM.glb"
+                                alt="RAM 3D Model"
+                                camera-controls
+                                auto-rotate
+                                interaction-prompt="none">
+                                <div slot="poster" style="background: #f8f9fa; display: flex; align-items: center; justify-content: center; height: 100%; color: #6c757d;">
+                                    <p>RAM Module</p>
+                                </div>
+                            </model-viewer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 3: Motherboard -->
+            <div class="section-container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="text-content">
+                            <h2>Motherboard</h2>
+                            <p>
+                                Motherboard adalah papan sirkuit utama yang menghubungkan semua komponen komputer. 
+                                Semua komponen hardware terpasang dan berkomunikasi melalui motherboard.
+                            </p>
+                            <h5>Komponen Penting:</h5>
+                            <ul class="feature-list">
+                                <li>Socket CPU untuk processor</li>
+                                <li>Slot RAM untuk memori</li>
+                                <li>Slot ekspansi (PCIe)</li>
+                                <li>Konektor power dan data</li>
+                                <li>Chipset untuk kontrol sistem</li>
+                            </ul>
+                            <button class="btn btn-primary">Pelajari Selengkapnya</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="model-container">
+                            <model-viewer 
+                                src="./asset/MOBO.glb"
+                                alt="Motherboard 3D Model"
+                                camera-controls
+                                auto-rotate
+                                interaction-prompt="none">
+                                <div slot="poster" style="background: #f8f9fa; display: flex; align-items: center; justify-content: center; height: 100%; color: #6c757d;">
+                                    <p>Motherboard</p>
+                                </div>
+                            </model-viewer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 4: Storage -->
+            <div class="section-container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6 order-lg-2 order-md-2">
+                        <div class="text-content">
+                            <h2>Storage (HDD/SSD)</h2>
+                            <p>
+                                Storage adalah tempat penyimpanan permanen untuk data dan program. HDD menggunakan 
+                                piringan magnetik, sementara SSD menggunakan flash memory yang lebih cepat.
+                            </p>
+                            <h5>Jenis Storage:</h5>
+                            <ul class="feature-list">
+                                <li>HDD: Kapasitas besar, harga murah</li>
+                                <li>SSD: Kecepatan tinggi, tahan guncangan</li>
+                                <li>NVMe: SSD dengan interface tercepat</li>
+                                <li>Hybrid: Kombinasi HDD dan SSD</li>
+                            </ul>
+                            <button= class="btn btn-primary">Pelajari Selengkapnya</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 order-lg-1 order-md-1">
+                        <div class="model-container">
+                            <model-viewer 
+                                src="./asset/strorage.glb"
+                                alt="Storage 3D Model"
+                                camera-controls
+                                auto-rotate
+                                interaction-prompt="none">
+                                <div slot="poster" style="background: #f8f9fa; display: flex; align-items: center; justify-content: center; height: 100%; color: #6c757d;">
+                                    <p>Storage Drive</p>
+                                </div>
+                            </model-viewer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 5: Graphics Card -->
+            <div class="section-container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="text-content">
+                            <h2>Graphics Card (GPU)</h2>
+                            <p>
+                                GPU bertanggung jawab untuk memproses grafik dan visual. Untuk gaming dan desain grafis, 
+                                dedicated graphics card memberikan performa yang jauh lebih baik dari integrated graphics.
+                            </p>
+                            <h5>Kegunaan:</h5>
+                            <ul class="feature-list">
+                                <li>Rendering grafik dan video</li>
+                                <li>Gaming dengan kualitas tinggi</li>
+                                <li>Desain grafis dan video editing</li>
+                                <li>Komputasi parallel (GPGPU)</li>
+                                <li>Machine learning dan AI</li>
+                            </ul>
+                            <button class="btn btn-primary">Pelajari Selengkapnya</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="model-container">
+                            <model-viewer 
+                                src="./asset/GPU.glb"
+                                alt="Graphics Card 3D Model"
+                                camera-controls
+                                auto-rotate
+                                interaction-prompt="none">
+                                <div slot="poster" style="background: #f8f9fa; display: flex; align-items: center; justify-content: center; height: 100%; color: #6c757d;">
+                                    <p>Graphics Card</p>
+                                </div>
+                            </model-viewer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 6: Power Supply -->
+            <div class="section-container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6 order-lg-2 order-md-2">
+                        <div class="text-content">
+                            <h2>Power Supply Unit (PSU)</h2>
+                            <p>
+                                PSU mengkonversi listrik AC dari wall outlet menjadi DC power dengan berbagai voltase 
+                                yang dibutuhkan komponen komputer. Kualitas PSU sangat penting untuk stabilitas sistem.
+                            </p>
+                            <h5>Fungsi PSU:</h5>
+                            <ul class="feature-list">
+                                <li>Konversi AC ke DC power</li>
+                                <li>Menyediakan multiple voltage rails</li>
+                                <li>Proteksi over-voltage dan over-current</li>
+                                <li>Efisiensi energi (80+ rating)</li>
+                            </ul>
+                            <button class="btn btn-primary">Pelajari Selengkapnya</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 order-lg-1 order-md-1">
+                        <div class="model-container">
+                            <model-viewer 
+                                src="./asset/PSU.glb"
+                                alt="Power Supply 3D Model"
+                                camera-controls
+                                auto-rotate
+                                interaction-prompt="none">
+                                <div slot="poster" style="background: #f8f9fa; display: flex; align-items: center; justify-content: center; height: 100%; color: #6c757d;">
+                                    <p>Power Supply Unit</p>
+                                </div>
+                            </model-viewer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Support System -->
+            <div class="text-center py-5">
+                <h1 class="display-4 mb-3">Komponen Pendukung Komputer</h1>
+            </div>
+            <!-- Section 1: CPU -->
+            <div class="section-container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="text-content">
+                            <h2>Cooling System</h2>
+                            <p>
+                              Cooling System adalah sistem pendingin pada komputer yang berfungsi menjaga suhu komponen utama 
+                              seperti CPU dan GPU agar tetap stabil. Dengan sistem pendingin yang baik, performa komputer 
+                              akan lebih optimal dan umur hardware bisa lebih panjang.
+                            </p>
+                            
+                            <h5>Fungsi Utama:</h5>
+                            <ul class="feature-list">
+                              <li>Menjaga suhu komponen agar tidak overheat</li>
+                              <li>Memastikan kinerja sistem tetap stabil</li>
+                              <li>Meningkatkan umur pemakaian hardware</li>
+                              <li>Mendukung performa maksimal saat beban kerja tinggi</li>
+                            </ul>
+                          
+                            <h5>Fun Fact:</h5>
+                            <p>
+                              Beberapa PC gaming dan server menggunakan <b>liquid cooling</b> yang bekerja seperti radiator mobil! 
+                              Cairan dialirkan untuk menyerap panas, lalu didinginkan kembali agar suhu tetap rendah.
+                            </p>
+                                          
+                            <button class="btn btn-primary">Pelajari Selengkapnya</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="model-container">
+                            <model-viewer 
+                                src="./asset/cooler.glb"
+                                alt="Cooling System Model"
+                                camera-controls
+                                auto-rotate
+                                interaction-prompt="none">
+                                <div slot="poster" style="background: #f8f9fa; display: flex; align-items: center; justify-content: center; height: 100%; color: #6c757d;">
+                                    <p>CPU Model</p>
+                                </div>
+                            </model-viewer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 2: RAM 
+            <div class="section-container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6 order-lg-2 order-md-2">
+                        <div class="text-content">
+                            <h2>Random Access Memory (RAM)</h2>
+                            <p>
+                                RAM adalah memori sementara yang digunakan untuk menyimpan data dan program yang sedang 
+                                aktif. Semakin besar kapasitas RAM, semakin banyak program yang dapat dijalankan bersamaan.
+                            </p>
+                            <h5>Karakteristik:</h5>
+                            <ul class="feature-list">
+                                <li>Penyimpanan sementara (volatile)</li>
+                                <li>Akses data sangat cepat</li>
+                                <li>Menentukan multitasking capability</li>
+                                <li>Data hilang saat power off</li>
+                            </ul>
+                            <button class="btn btn-primary">Pelajari Selengkapnya</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 order-lg-1 order-md-1">
+                        <div class="model-container">
+                            <model-viewer 
+                                src="./asset/RAM.glb"
+                                alt="RAM 3D Model"
+                                camera-controls
+                                auto-rotate
+                                interaction-prompt="none">
+                                <div slot="poster" style="background: #f8f9fa; display: flex; align-items: center; justify-content: center; height: 100%; color: #6c757d;">
+                                    <p>RAM Module</p>
+                                </div>
+                            </model-viewer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+-->
+
+
+
+
+
+
+            <!-- Footer -->
+            <div class="text-center py-5">
+                <p class="text-muted">Dibuat Oleh Faris Iskandar Hafidz - halia.id propeties | Catatan pembelajaran komponen komputer © 2025</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- SweetAlert JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- JavaScript -->
+     <script src="main.js"></script>
+</body>
+</html>
