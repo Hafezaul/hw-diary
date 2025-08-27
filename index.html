@@ -26,21 +26,22 @@
             
     <!-- Bootstrap CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootsrap Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     
     <!-- Model Viewer -->
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
-    
-    
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   
     <div class="container-fluid">
         <div class="container">
             <!-- Header -->
             <div class="text-center py-5">
                 <h1 class="display-4 mb-3">Komponen Utama Komputer</h1>
-                <p class="lead text-muted">Catatan pembelajaran tentang hardware komputer</p>
+                <p class="lead">Catatan pembelajaran tentang hardware komputer</p>
             </div>
 
             <!-- Section 1: CPU -->
@@ -271,7 +272,7 @@
             <div class="text-center py-5">
                 <h1 class="display-4 mb-3">Komponen Pendukung Komputer</h1>
             </div>
-            <!-- Section 1: CPU -->
+            <!-- Section 1: Colling System -->
             <div class="section-container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-6">
@@ -317,44 +318,47 @@
                 </div>
             </div>
 
-            <!-- Section 2: RAM 
+            <!-- Section 2:  Casing (Chassis) -->
+
             <div class="section-container">
                 <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-6 order-lg-2 order-md-2">
-                        <div class="text-content">
-                            <h2>Random Access Memory (RAM)</h2>
-                            <p>
-                                RAM adalah memori sementara yang digunakan untuk menyimpan data dan program yang sedang 
-                                aktif. Semakin besar kapasitas RAM, semakin banyak program yang dapat dijalankan bersamaan.
-                            </p>
-                            <h5>Karakteristik:</h5>
-                            <ul class="feature-list">
-                                <li>Penyimpanan sementara (volatile)</li>
-                                <li>Akses data sangat cepat</li>
-                                <li>Menentukan multitasking capability</li>
-                                <li>Data hilang saat power off</li>
-                            </ul>
-                            <button class="btn btn-primary">Pelajari Selengkapnya</button>
-                        </div>
+                  <div class="col-lg-6 col-md-6 order-lg-2 order-md-2">
+                    <div class="text-content">
+                      <h2>Casing (Chassis)</h2>
+                      <p>
+                        Casing adalah tempat untuk merakit semua komponen komputer, 
+                        menyediakan proteksi fisik, serta membantu sirkulasi udara (airflow). 
+                        Selain itu, casing juga menjadi elemen estetika dengan desain modern 
+                        seperti tempered glass dan RGB lighting.
+                      </p>
+                      <h5>Karakteristik:</h5>
+                      <ul class="feature-list">
+                        <li>Melindungi komponen dari debu dan benturan</li>
+                        <li>Menyediakan airflow untuk menjaga suhu</li>
+                        <li>Memiliki slot ekspansi & drive bay untuk HDD/SSD</li>
+                        <li>Mendukung cable management agar lebih rapi</li>
+                        <li>Estetika (RGB, tempered glass)</li>
+                      </ul>
+                      <button class="btn btn-primary">Pelajari Selengkapnya</button>
                     </div>
-                    <div class="col-lg-6 col-md-6 order-lg-1 order-md-1">
-                        <div class="model-container">
-                            <model-viewer 
-                                src="./asset/RAM.glb"
-                                alt="RAM 3D Model"
-                                camera-controls
-                                auto-rotate
-                                interaction-prompt="none">
-                                <div slot="poster" style="background: #f8f9fa; display: flex; align-items: center; justify-content: center; height: 100%; color: #6c757d;">
-                                    <p>RAM Module</p>
-                                </div>
-                            </model-viewer>
+                  </div>
+                  <div class="col-lg-6 col-md-6 order-lg-1 order-md-1">
+                    <div class="model-container">
+                      <model-viewer 
+                        src="./asset/pc_case.glb"
+                        alt="PC Casing 3D Model"
+                        camera-controls
+                        auto-rotate
+                        interaction-prompt="none">
+                        <div slot="poster" style="background: #f8f9fa; display: flex; align-items: center; justify-content: center; height: 100%; color: #6c757d;">
+                          <p>PC Casing</p>
                         </div>
+                      </model-viewer>
                     </div>
+                  </div>
                 </div>
-            </div>
--->
-
+              </div>
+              
 
 
 
